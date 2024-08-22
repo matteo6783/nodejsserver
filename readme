@@ -1,0 +1,67 @@
+npm start    ----> per avviare server
+
+
+const cards = [ // vettore di oggetti
+   {
+    id: "0",
+    kod: "CEH1234567",
+    konto: "602",
+    zakaznik: "Matteo",
+    result: "true"
+   },
+   {
+    id: "1",
+    kod: "ASE1234567",
+    konto: "602",
+    zakaznik: "Matteo",
+    result: "true"
+   },
+   {
+    id: "2",
+    kod: "CED1234567",
+    konto: "602",
+    zakaznik: "Matteo",
+    result: "true"
+   },
+   {
+    id: "3",
+    kod: "ILD1234567",
+    konto: "602",
+    zakaznik: "Matteo",
+    result: "true"
+   }
+]
+
+module.exports = {cards}
+
+
+
+    const {query}     = req.query
+    //const {cena}      = req.query
+    //const {popis}     = req.query
+    //const {hlasitost} = req.query
+    //console.log(query)
+    //console.log(cena)
+    //console.log(popis)
+    //console.log(hlasitost)
+    //console.log("ingegname", cardsCopy.user)
+
+    //let cardsCopy = [...cards]  
+
+    if(query){
+      cardsCopy = cardsCopy.filter((cardCode) =>{
+       if(cardCode.kod === (query))
+       {
+        //cardCode.result = "true"
+        //cardCode.konto = parseFloat(hlasitost) + 2
+        //cardCode.konto = hlasitost + 2
+        //const {test} = JSON.stringify(cardCode)
+        //console.log("baroni", JSON.stringify(cardCode))
+        //writeFileSync('cards.js',JSON.stringify(cardCode))
+        //for(let key of Object.keys(cardsCopy.users)){
+         // console.log(cardsCopy.users)
+        //}
+        return cardCode.kod
+       }
+      })
+    }

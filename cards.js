@@ -1,0 +1,3 @@
+const cards =
+[{"id":0,"kod":"CEH1234567","konto":"672","zakaznik":"Luca","result":"true"},{"id":1,"kod":"ASE1234567","konto":"29","zakaznik":"Paolo","result":"true"},{"id":2,"kod":"CED1234567","konto":"53.8","zakaznik":"Giorgio","result":true},{"id":3,"kod":"ILD1234567","konto":"3602","zakaznik":"Amilcare","result":"true"},{"id":4,"kod":"ILK1234567","konto":"24","zakaznik":"Ugo","result":"true"},{"id":5,"kod":"SND1234567","konto":"98","zakaznik":"Andrea","result":"true"}]
+module.exports = {cards}
